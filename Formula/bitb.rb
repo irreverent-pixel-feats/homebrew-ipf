@@ -1,15 +1,15 @@
 class Bitb < Formula
   desc "Bitbucket CLI"
   homepage "https://github.com/irreverent-pixel-feats/bitbucket"
-  url "https://dl.bintray.com/irreverent-pixel-feats/brew/bottles/bitb-0.0.1-20180330162209-a70044e.bottle.tar.gz"
-  version "0.0.1-20180330162209-a70044e"
-  sha256 "00e4f1e87e6b5fad3b5d11b0b2bc18bfa7306b3a3f00fc1e117cdb9ac0b1c656"
+  url "https://dl.bintray.com/irreverent-pixel-feats/brew/bottles/bitb-0.0.1-20180330165914-9b08d17.bottle.tar.gz"
+  version "0.0.1-20180330165914-9b08d17"
+  sha256 "87e2b634f941c07b18dfb3829eecbed9c08027ed91cd0a0335a51932a7770b2e"
 
   def install
     bin.install "bin/bitb"
-    bash_completion.install "_completions/bitb.bash"
+    bash_completion.install "_completions/bash/bitb"
     zsh_completion.install "_completions/zsh/_bitb"
-    fish_completion.install "_completions/bitb.fish"
+    fish_completion.install "_completions/fish/bitb.fish"
   end
 
   def test
